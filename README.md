@@ -2,7 +2,7 @@
 A collection of my macros for Turtle WoW
 
 Buff Macro - Alt to self cast that works even when targeting a friendly NPC. Will not buff PVP flagged targets.  
-`/script s='Power Word: Fortitude' if IsAltKeyDown() then CastSpellByName(s, 1) elseif not UnitIsPVP("target") then CastSpellByName(s) else end`
+`lua /script s='Power Word: Fortitude' if IsAltKeyDown() then CastSpellByName(s, 1) elseif not UnitIsPVP("target") then CastSpellByName(s) else end`
 
 Shows your target's Min & Max damage  
 `/script lowDmg, hiDmg, offlowDmg, offhiDmg, posBuff, negBuff, percentmod = UnitDamage("target") DEFAULT_CHAT_FRAME:AddMessage(format("%s: damage = %.2f - %.2f", GetUnitName("target"), lowDmg, hiDmg))`
