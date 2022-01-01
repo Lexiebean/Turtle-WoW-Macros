@@ -27,7 +27,7 @@ Macro:
 `/run DeleteTorch(1,1)`
 
 Extended LUA:  
-```luafunction DeleteTorch()
+```function DeleteTorch()
     local bag, slot;
     for bag = 0, 4 do
         for slot = 1, GetContainerNumSlots(bag) do
