@@ -34,7 +34,9 @@ Holding shift while using the macro will "orverride" the macro and make the butt
 Delete Torch - Scans your inventory for any Dim Torches and deletes them. (Great for those early levels of Survival)  
 
 Macro:  
-`/run DeleteTorch(1,1)`
+```lua
+/run DeleteTorch(1,1)
+```
 
 Extended LUA:  
 ```lua
@@ -93,4 +95,4 @@ pfUI\api\unitframes.lua around ``line 2343``
 
 Then when you edit your unti frames in game you should have some new data strings to choose from for your healthbar or powerbar texts. I display mine on my targets manabar/powerbar.
 
-![pfUI Changes](https://github.com/Lexiebean/Turtle-WoW-Macros/blob/main/pfUguiChange.png)
+![pfUI Changes](pfUI-in-game-settings.png)
