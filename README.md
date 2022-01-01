@@ -38,9 +38,9 @@ Extended LUA:
             end
         end
     end
-end
+end```
 
-function IsTorch(link)
+```function IsTorch(link)
     local index;
     if (DeleteTorch_ExtractLinkID(link) == 6182) then
         return true;
