@@ -27,7 +27,8 @@ Macro:
 `/run DeleteTorch(1,1)`
 
 Extended LUA:  
-```function DeleteTorch()
+```lua
+function DeleteTorch()
     local bag, slot;
     for bag = 0, 4 do
         for slot = 1, GetContainerNumSlots(bag) do
@@ -38,9 +39,9 @@ Extended LUA:
             end
         end
     end
-end```
+end
 
-```function IsTorch(link)
+function IsTorch(link)
     local index;
     if (DeleteTorch_ExtractLinkID(link) == 6182) then
         return true;
