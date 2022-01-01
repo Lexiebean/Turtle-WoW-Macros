@@ -1,5 +1,5 @@
 # Turtle-WoW-Macros
-A collection of my macros for Turtle WoW
+A collection of useful macros and addon edits for Turtle WoW.
 
 **Buff Macro** - Alt to self cast that works even when targeting a friendly NPC. Will not buff PVP flagged targets.  
 ```lua
@@ -25,6 +25,11 @@ A collection of my macros for Turtle WoW
 Holding shift while using the macro will "orverride" the macro and make the button work like normal. I had a problem where sometimes after being knocked down by an NPC I wasn't able to start wanding again by using the spamable button.  
 ```lua
 /script if(IsShiftKeyDown()) then CastSpellByName('Shoot') elseif not IsAutoRepeatAction(12) then CastSpellByName('Shoot') end
+```
+
+**Rested Exp**
+```lua
+/script p="player";x=UnitXP(p);m=UnitXPMax(p);r=GetXPExhaustion();if -1==(r or -1)then t="No rest."else t="Rest: "..(math.floor(20*r/m+0.5)).." bubbles ("if r+x<m then t=t..r else t=t.."level +"..(r+x-m)end t=t.."XP)"end;DEFAULT_CHAT_FRAME:AddMessage(t)
 ```
 
 ---
