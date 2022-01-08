@@ -41,11 +41,15 @@ Holding shift while using the macro will "orverride" the macro and make the butt
 
 **SUPER MACROS**
 
+**YOU NEED THE [SUPERMACRO](https://github.com/isitLoVe/SuperMacro/) ADDON FOR THESE MACROS**
+
 Delete Torch - Scans your inventory for any Dim Torches and deletes them. (Great for those early levels of Survival)  
+
+![pfUI Changes](https://github.com/Lexiebean/Turtle-WoW-Macros/blob/main/DeleteTorch.png)
 
 Macro:  
 ```lua
-/run DeleteTorch(1,1)
+/run DeleteTorch()
 ```
 
 Extended LUA:  
