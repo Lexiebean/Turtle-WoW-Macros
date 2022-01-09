@@ -1,9 +1,9 @@
 # Turtle-WoW-Macros
 A collection of useful macros and addon edits for Turtle WoW.
 
-**Buff Macro** - Alt to self cast that works even when targeting a friendly NPC. Will not buff PVP flagged targets.  
+**Buff Macro** - Alt to self cast. Will not buff PVP flagged targets. - by Nakie
 ```lua
-/script s='Power Word: Fortitude' if IsAltKeyDown() then CastSpellByName(s, 1) elseif not UnitIsPVP("target") then CastSpellByName(s) else end
+/script spell="Power Word: Fortitude"; onself=IsAltKeyDown(); if onself or not UnitExists("target") or UnitIsEnemy("player", "target") or not UnitIsPVP("target") then CastSpellByName(spell, onself) end
 ```
 
 **Shows your target's Min & Max damage**  
@@ -27,9 +27,14 @@ Holding shift while using the macro will "orverride" the macro and make the butt
 /script if(IsShiftKeyDown()) then CastSpellByName('Shoot') elseif not IsAutoRepeatAction(12) then CastSpellByName('Shoot') end
 ```
 
-**Rested Exp**
+**Rested Exp (Bubbles)**
 ```lua
 /script p="player";x=UnitXP(p);m=UnitXPMax(p);r=GetXPExhaustion();if -1==(r or -1)then t="No rest."else t="Rest: "..(math.floor(20*r/m+0.5)).." bubbles ("if r+x<m then t=t..r else t=t.."level +"..(r+x-m)end t=t.."XP)"end;DEFAULT_CHAT_FRAME:AddMessage(t)
+```
+
+**Rested Exp (Percentage, up to 150%) - by Nakie**
+```lua
+/script DEFAULT_CHAT_FRAME:AddMessage(format("%d%% rested", 100 * GetXPExhaustion() / UnitXPMax("player")))
 ```
 
 **One-Button Tent**
