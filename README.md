@@ -8,7 +8,7 @@ A collection of useful macros and addon edits for Turtle WoW.
 
 **Shows your target's Min & Max damage**  
 ```lua
-/script lowDmg, hiDmg, offlowDmg, offhiDmg, posBuff, negBuff, percentmod = UnitDamage("target") DEFAULT_CHAT_FRAME:AddMessage(format("%s: damage = %.2f - %.2f", GetUnitName("target"), lowDmg, hiDmg))
+/script L, H = UnitDamage("target") DEFAULT_CHAT_FRAME:AddMessage(format("%s Dmg: %.0f - %.0f", GetUnitName("target"), L, H))
 ```
 
 **Shows your target's Attack Speed**  
