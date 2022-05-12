@@ -8,11 +8,6 @@ A collection of useful macros and addon edits for Turtle WoW.
 
 **Shows your target's Min & Max melee damage and their attack speed**  
 ```lua
-/script L, H = UnitDamage("target") DEFAULT_CHAT_FRAME:AddMessage(format("%s Dmg: %.0f - %.0f", GetUnitName("target"), L, H))
-```
-
-**Shows your target's Attack Speed**  
-```lua
 /run L, H = UnitDamage("target"); S = UnitAttackSpeed("target"); DEFAULT_CHAT_FRAME:AddMessage(format("%s Dmg: [%.0f - %.0f] -- SPD: %.2f", GetUnitName("target"), L, H,S))
 ```
 
