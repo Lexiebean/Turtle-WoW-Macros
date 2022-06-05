@@ -94,16 +94,7 @@ pfUI\modules\gui.lua around ``line 1024``
 ```
 ![pfUI Changes](https://github.com/Lexiebean/Turtle-WoW-Macros/blob/main/pfUguiChange.png)
 
-pfUI\api\unitframes.lua around ``line 2343``  
-```lua
--- attack speed/dmg
-  elseif config == "attackspeed" then
-    local mainSpeed, offSpeed = UnitAttackSpeed("target")
-    return unit:GetColor("unit") .. format("Spd: %.2f", mainSpeed) 
-  elseif config == "attackdmg" then
-    local lowDmg, hiDmg, offlowDmg, offhiDmg, posBuff, negBuff, percentmod = UnitDamage("target")
-    return unit:GetColor("unit") .. format("Dmg: %.0f - %.0f", lowDmg, hiDmg)
-```
+Add custom.lua to `...\Turtle WoW\Interface\AddOns\pfUI\modules`
 
 ![pfUI Changes](https://github.com/Lexiebean/Turtle-WoW-Macros/blob/main/pfUIunitframesChange.png)
 
