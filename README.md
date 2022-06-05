@@ -87,17 +87,8 @@ end
 
 ![pfUI Changes](https://github.com/Lexiebean/Turtle-WoW-Macros/blob/main/pfUIChanges.png)
 
-pfUI\modules\gui.lua around ``line 1024``  
-```lua
-        "attackspeed:" .. T["Attack Speed"],
-        "attackdmg:" .. T["Min/Max Damage"],
-```
-![pfUI Changes](https://github.com/Lexiebean/Turtle-WoW-Macros/blob/main/pfUguiChange.png)
-
 Add custom.lua to `...\Turtle WoW\Interface\AddOns\pfUI\modules`
 
-![pfUI Changes](https://github.com/Lexiebean/Turtle-WoW-Macros/blob/main/pfUIunitframesChange.png)
-
-Then when you edit your unti frames in game you should have some new data strings to choose from for your healthbar or powerbar texts. I display mine on my targets manabar/powerbar.
+Open /pfui's settings in game. Unit Frames > Target, there will be some new data strings to choose from for your healthbar or powerbar texts.
 
 ![pfUI Changes](pfUI-in-game-settings.png)
